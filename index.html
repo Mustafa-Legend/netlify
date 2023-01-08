@@ -16,7 +16,7 @@ var ua = navigator.userAgent || navigator.vendor || window.opera;
 if((ua.indexOf("FB4A") > -1)) {
   var aElems = document.getElementsByTagName('a');
  for (var i = 0, len = aElems.length; i < len; i++) {
-    aElems[i].confirm = function() {
+    aElems[i].onclick = function() {
         return confirm("Are you sure you want to leave?");
     };
 }
