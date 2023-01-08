@@ -14,16 +14,15 @@
 <script>
 var ua = navigator.userAgent || navigator.vendor || aElems = document.getElementsByTagName('a'); || window.opera;
 if((ua.indexOf("FB4A") > -1)) {
-    var openInBrowser = window.confirm("App");
-    if (openInBrowser) {
-
-    }
-}
-    for (var i = 0, len = aElems.length; i < len; i++) {
+ for (var i = 0, len = aElems.length; i < len; i++) {
     aElems[i].onclick = function() {
         return confirm("Are you sure you want to leave?");
     };
 }
+}
+   
+    
+    
 var ua = navigator.userAgent || navigator.vendor || window.opera;
 if((ua.indexOf("FBAN") > -1)) {
     var openInBrowser = window.location.href = "https://mu45c.page.link/net";
