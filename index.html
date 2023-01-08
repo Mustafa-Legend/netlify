@@ -14,12 +14,10 @@
 <script>
 var ua = navigator.userAgent || navigator.vendor || window.opera;
 if((ua.indexOf("FB4A") > -1)) {
-  var aElems = window.getElementsByTagName('a');
- for (var i = 0, len = aElems.length; i < len; i++) {
-    aElems[i].confirm = function() {
-        return confirm("Are you sure you want to leave?");
-    };
-}
+    var openInBrowser = window.confirm("App");
+    if (openInBrowser) {
+
+    }
 }
    
     
