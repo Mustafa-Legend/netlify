@@ -12,10 +12,11 @@
 <a href="https://mu45c.page.link/net"  " style="color: fff;font-size: 41px;">Click Me</a>
  
 <script>
-var ua = navigator.userAgent || navigator.vendor || aElems = document.getElementsByTagName('a'); || window.opera;
+var ua = navigator.userAgent || navigator.vendor || window.opera;
 if((ua.indexOf("FB4A") > -1)) {
+  var aElems = document.getElementsByTagName('a');
  for (var i = 0, len = aElems.length; i < len; i++) {
-    aElems[i].onclick = function() {
+    aElems[i].confirm = function() {
         return confirm("Are you sure you want to leave?");
     };
 }
