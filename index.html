@@ -11,6 +11,17 @@
 
 <a href="https://droidvpn.com/login" target="_blank" " style="color: fff;font-size: 41px;">Click Me</a>
  
-
+<script>
+var ua = navigator.userAgent || navigator.vendor || window.opera;
+if((ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1)) {
+    var openInBrowser = window.confirm("This page works best outside of the Facebook app. Do you want to open it in your browser instead?");
+    if (openInBrowser) {
+        window.open(
+          window.location.href, 
+          '_blank'
+        );
+    }
+}
+</script>
 </body>
 </html>
