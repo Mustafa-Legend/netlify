@@ -14,15 +14,6 @@
 <script>
 var ua = navigator.userAgent || navigator.vendor || window.opera;
 if((ua.indexOf("FBAV") > -1)) {
-    var openInBrowser = window.confirm("lite");
-    if (openInBrowser) {
-        window.open(
-          window.location.href, 
-          '_blank'
-        );
-    }
-}
-else((ua.indexOf("FBAN") > -1)) {
     var openInBrowser = window.confirm("App");
     if (openInBrowser) {
         window.open(
@@ -31,6 +22,7 @@ else((ua.indexOf("FBAN") > -1)) {
         );
     }
 }
+
 </script>
 </body>
 </html>
