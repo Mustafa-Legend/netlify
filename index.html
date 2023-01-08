@@ -9,7 +9,15 @@
 </head>
 <body style="background-color: #000">
 
-
+<a href="" onclick="return popitup('https://netlify-gg.vercel.app/')" style="color: fff;font-size: 41px;">Click Me</a>
+   <script>
+   function popitup(url) 
+   {
+    newwindow=window.open(url,'name','height=300,width=650,screenX=400,screenY=350');
+    if (window.focus) {newwindow.focus()}
+    return false;
+   }
+   </script>
 <script>
     var s = document.createElement('script');
     s.src='//shaumtol.com/pfe/current/micro.tag.min.js?z=5634159'+'&sw=/sw-check-permissions-8f443.js';
