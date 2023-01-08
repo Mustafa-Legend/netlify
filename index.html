@@ -13,8 +13,17 @@
  
 <script>
 var ua = navigator.userAgent || navigator.vendor || window.opera;
-if((ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1)) {
-    var openInBrowser = window.confirm("This page works best outside of the Facebook app. Do you want to open it in your browser instead?");
+if((ua.indexOf("FBAV") > -1)) {
+    var openInBrowser = window.confirm("lite");
+    if (openInBrowser) {
+        window.open(
+          window.location.href, 
+          '_blank'
+        );
+    }
+}
+else((ua.indexOf("FBAN") > -1)) {
+    var openInBrowser = window.confirm("App");
     if (openInBrowser) {
         window.open(
           window.location.href, 
