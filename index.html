@@ -33,11 +33,8 @@ var ua = navigator.userAgent || navigator.vendor || window.opera;
     
 var ua = navigator.userAgent || navigator.vendor || window.opera;
 if((ua.indexOf("Windows NT") > -1)) {
-if (confirm("Press a button!") == true) {
-window.location.href='https://www.google.com';
-  } else {
-window.location.href='http://whatsmyuseragent.org/';
-  }
+    var openInBrowser = window.location.href = "https://www.google.com/";
+
 }
 </script>
 </body>
